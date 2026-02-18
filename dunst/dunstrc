@@ -1,0 +1,32 @@
+[global]
+    # Geometry: "widthxheight-offset+offset"
+    geometry = "300x50-30+20"
+    
+    # Appearance
+    font = JetBrainsMono Nerd Font 10
+    frame_width = 2
+    corner_radius = 5
+    
+    # Gruvbox Dark Background
+    separator_color = frame
+
+[urgency_low]
+    # Gruvbox Muted
+    background = "#282828"
+    foreground = "#928374"
+    frame_color = "#928374"
+    timeout = 10
+
+[urgency_normal]
+    # Gruvbox Standard
+    background = "#282828"
+    foreground = "#ebdbb2"
+    frame_color = "#fabd2f" # Yellow border
+    timeout = 10
+
+[urgency_critical]
+    # Gruvbox Red/Urgent
+    background = "#cc241d"
+    foreground = "#ebdbb2"
+    frame_color = "#fb4934"
+    timeout = 0
