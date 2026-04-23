@@ -5,32 +5,32 @@ My first attempt at "linux ricing"
 - xrandr - screen resolution & refresh rate
 	.screenlayout/monitor.sh has the settings
 
-arandr - moniter control
-xinput - natural mouse scrolling
-redshift - night light
-lxappearance - themes, icons, darkmode for windows
-pavucontrol - audio io
-pulseaudio-utils - audio shortcuts
-blueman - bluetooth
-caffeine - no screen sleep during vid or fullscreen
-rofi - powermenu and app launcher
-flameshot - screenshots
-xclip - paste screenshots
+- arandr - moniter control
+- xinput - natural mouse scrolling
+- redshift - night light
+- lxappearance - themes, icons, darkmode for windows
+- pavucontrol - audio io
+- pulseaudio-utils - audio shortcuts
+- blueman - bluetooth
+- caffeine - no screen sleep during vid or fullscreen
+- rofi - powermenu and app launcher
+- flameshot - screenshots
+- xclip - paste screenshots
 
 
 ### appearance
-i3status - default bar at bottom *(switched to polybar)*
-polybar - cooler bar
-dmenu - app launcher
-kitty - customize terminals
-feh - wallpaper
-picom - compositor
-ddcutil - screen brightness
+- i3status - default bar at bottom *(switched to polybar)*
+- polybar - cooler bar
+- dmenu - app launcher
+- kitty - customize terminals
+- feh - wallpaper
+- picom - compositor
+- ddcutil - screen brightness
 
 ### system
-ly - login manager
-dunst - system notification daemon
-libnotify-bin - send test commands
-policykit-1-gnome - authentication agent
+- ly - login manager
+- dunst - system notification daemon
+- libnotify-bin - send test commands
+- policykit-1-gnome - authentication agent
 
-pyenv - account level python (seperate from system py)
+- pyenv - account level python (seperate from system py)
