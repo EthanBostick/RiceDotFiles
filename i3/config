@@ -44,6 +44,13 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# maybe null
+# Pings the gateway once every 60 seconds to stay "Active" in the school's table
+exec --no-startup-id fping -l -i 60000 8.8.8.8 > /dev/null 2>&1
+
+# toggle speed
+bindsym $mod+n exec --no-startup-id ~/.config/polybar/toggle_speed.sh
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -198,6 +205,15 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+#External Monitor Brightness with IPC Trigger to update polybar
+bindsym $mod+F1 exec --no-startup-id sh -c "ddcutil setvcp 10 - 10 && polybar-msg action '#ddc-brightness.hook.0'"
+bindsym $mod+F2 exec --no-startup-id sh -c "ddcutil setvcp 10 + 10 && polybar-msg action '#ddc-brightness.hook.0'"
+
+#sound controls
+bindsym $mod+F10 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym $mod+F11 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym $mod+F12 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+
 #!!!now using polybar
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -218,11 +234,11 @@ bindsym $mod+Print exec --no-startup-id flameshot gui -c
 
 # nightlight + toggles
 exec --no-startup-id redshift-gtk
-bindsym $mod+F1 exec redshift -x
+bindsym $mod+F6 exec redshift -x
 
 # wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/rockman.png
-#exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/wall.jpg
+#exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/gruvy-night.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/forest-4.jpg
 
 #transparency
 exec_always --no-startup-id picom -f
