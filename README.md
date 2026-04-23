@@ -2,7 +2,7 @@
 My first attempt at "linux ricing"
 
 ### Settings
-xrandr - screen resolution & refresh rate
+- xrandr - screen resolution & refresh rate
 	.screenlayout/monitor.sh has the settings
 
 arandr - moniter control
