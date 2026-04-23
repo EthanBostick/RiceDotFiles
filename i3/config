@@ -237,8 +237,8 @@ exec --no-startup-id redshift-gtk
 bindsym $mod+F6 exec redshift -x
 
 # wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/rockman.png
-#exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/wall.jpg
+#exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/gruvy-night.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/forest-4.jpg
 
 #transparency
 exec_always --no-startup-id picom -f
